@@ -19,8 +19,8 @@
   height: auto;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(2,6,23,0.6);
-  border: 2px solid rgba(255,255,255,0.04);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 0 24px rgba(0,230,255,0.04);
+  border: 2px solid rgba(0,230,255,0.06);
 }
 
 .about-text {

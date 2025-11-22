@@ -14,7 +14,7 @@ const Hero = () => {
     >
       <div className="hero-content">
         <motion.h1 initial={{ opacity: 0, y: 8 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          Hello, I'm <span>Your Name</span>
+          Hello, I'm <span>Daksh</span>
         </motion.h1>
         <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.08, duration: 0.6 }}>
           Computer Science student | Aspiring Software Engineer | Full-stack Developer

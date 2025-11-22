@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Skills.css";
-import NeuralBackground from "./NeuralBackground";
+
 
 const Skills = () => {
   const skills = [
@@ -17,7 +17,6 @@ const Skills = () => {
 
   return (
     <section className="skills" id="skills">
-      <NeuralBackground color="#4a53e6" nodeCount={70} />
       <h2>My Skills</h2>
       <div className="skills-container">
         {skills.map((skill, index) => {

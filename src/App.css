@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.app-content {
+  position: relative;
+  z-index: 1; /* sit above global neon canvas */
+}
+
 @media (max-width: 600px) {
   #root {
     padding: 1rem;

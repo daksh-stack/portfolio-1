@@ -12,6 +12,16 @@ const NeuralBackground = ({ color = "#4a53e6", nodeCount = 60 }) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
+    // resolve color: if css variable provided, read computed style
+    let drawColor = color;
+    try {
+      if (!drawColor || drawColor.startsWith("var(")) {
+        const cs = getComputedStyle(document.documentElement).getPropertyValue("--accent");
+        if (cs) drawColor = cs.trim();
+      }
+    } catch (e) {
+      drawColor = color || "#00e6ff";
+    }
 
     function resize() {
       const dpr = window.devicePixelRatio || 1;
@@ -67,7 +77,7 @@ const NeuralBackground = ({ color = "#4a53e6", nodeCount = 60 }) => {
         const a = nodes[i];
         // draw node
         ctx.beginPath();
-        ctx.fillStyle = color;
+        ctx.fillStyle = drawColor;
         ctx.globalAlpha = 0.9;
         ctx.arc(a.x, a.y, 2 + (Math.sin((a.x + a.y + performance.now() / 800) / 40) + 1) * 0.8, 0, Math.PI * 2);
         ctx.fill();
@@ -81,7 +91,7 @@ const NeuralBackground = ({ color = "#4a53e6", nodeCount = 60 }) => {
           if (dist < 120) {
             const alpha = 0.25 * (1 - dist / 120);
             ctx.beginPath();
-            ctx.strokeStyle = color;
+            ctx.strokeStyle = drawColor;
             ctx.lineWidth = 1;
             ctx.globalAlpha = alpha * 0.9;
             ctx.moveTo(a.x, a.y);

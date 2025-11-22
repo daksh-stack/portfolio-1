@@ -1,13 +1,18 @@
 :root {
-  --bg: #0b1220;
-  --surface: #0f1724;
-  --card: #0f1a2a;
-  --muted: #9aa4b2;
-  --text: #e6eef6;
-  --accent: #646cff;
-  --accent-2: #f7c873;
+  /* Black / anime-tech theme */
+  --bg: #000000; /* pure black base */
+  --surface: #070707; /* near black panels */
+  --card: rgba(255,255,255,0.02); /* subtle glass card */
+  --muted: #9bdaf0; /* muted cyan for body copy */
+  --text: #e6f7ff; /* very light cyan/white */
+  --accent: #00e6ff; /* neon cyan */
+  --accent-2: #ff4dd2; /* neon pink/magenta */
+  --glow: 0 8px 30px rgba(0,230,255,0.08), 0 0 80px rgba(255,77,210,0.03);
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-sans: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-code: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+
+  font-family: var(--font-sans);
   line-height: 1.5;
   font-weight: 400;
 
@@ -41,15 +46,18 @@ body {
   min-height: 100vh;
   background-color: var(--bg);
   color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
   font-size: clamp(1.6rem, 3.2vw + 1rem, 3.2rem);
-  line-height: 1.1;
-}
+  color: var(--accent);
+
 
 /* Responsive images and media */
-img, picture, video {
+  color: var(--accent-2);
   max-width: 100%;
   height: auto;
   display: block;

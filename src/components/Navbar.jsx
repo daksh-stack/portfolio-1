@@ -19,11 +19,25 @@ const Navbar = () => {
           <a href="#home">Daksh Hardiya</a>
         </div>
         <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
-          <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+          {[
+            ["Home", "#home"],
+            ["About", "#about"],
+            ["Skills", "#skills"],
+            ["Projects", "#projects"],
+            ["Contact", "#contact"],
+          ].map(([label, href], i) => (
+            <motion.a
+              key={href}
+              href={href}
+              onClick={() => setMenuOpen(false)}
+              initial={{ opacity: 0, y: -8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.45, delay: i * 0.06 }}
+            >
+              {label}
+            </motion.a>
+          ))}
         </nav>
         <button
           className="menu-icon"

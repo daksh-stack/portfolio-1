@@ -20,9 +20,10 @@
 }
 
 .project-card {
-  background: var(--card);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  box-shadow: var(--glow);
+  border: 1px solid rgba(0,230,255,0.06);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -39,7 +40,7 @@
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
 }
 
 .project-content {
