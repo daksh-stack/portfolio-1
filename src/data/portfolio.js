@@ -74,5 +74,41 @@ export const portfolioData = {
                 "Published works highlight ability to simplify complex concepts for broader audiences."
             ]
         }
+    ],
+    research: [
+        {
+            title: "Leveraging Artificial Intelligence to Design Scalable Eco-innovation",
+            date: "Nov 2025",
+            description: [
+                "A research on finding ways to find sustainable ways to innovate with the conservation of Ecosystem.",
+                "Study helped me to find the connecting dots between the ways for the sustainable development.",
+                "Learnt how the present business models are not efficient enough to maintain a clean game."
+            ]
+        },
+        {
+            title: "Sodium ion batteries as a green source of energy",
+            date: "Sep 2025",
+            description: [
+                "A research study on Sodium ion batteries. Alternating them as the best green source of energy.",
+                "Gave me a better understanding of working of Sodium ion batteries.",
+                "Learnt about how we can use both Sodium and Lithium ion batteries conclusively to maximize the efficiency."
+            ]
+        },
+        {
+            title: "Battery Production's Environmental Footprints in Electric Mobility",
+            date: "Mar 2025",
+            description: [
+                "My first research paper. We won the best paper presentation price too.",
+                "I learnt about the 2 sides of coin. How the mass production of batteries leads to environmental degradation."
+            ]
+        },
+        {
+            title: "Astro-Hive – A modular AI assistant for Space Exploration",
+            date: "Jan 2025",
+            description: [
+                "The idea is to make an AI assistant capable enough to direct the researches in outer planet and analyze the outcomes.",
+                "Also help in the activities and acts humans perform in outer space operation."
+            ]
+        }
     ]
 };
