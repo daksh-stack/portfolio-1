@@ -1,26 +1,31 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Skills from './components/Skills';
+import TechStack from './components/TechStack';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import GlobalNeon from './components/GlobalNeon';
+import BackgroundAnimation from './components/BackgroundAnimation';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
   return (
-    <div>
-      <GlobalNeon />
-      <div className="app-content">
-        <Navbar />
+    <div style={{ minHeight: '100vh', color: 'var(--color-text)', position: 'relative' }}>
+      <BackgroundAnimation />
+      <CustomCursor />
+      <Navbar />
+      <main>
         <Hero />
         <About />
-        <Skills />
+        <TechStack />
         <Projects />
-        {/* <Contact /> */}
-        <Footer />
-      </div>
+        <Experience />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
+
 export default App;

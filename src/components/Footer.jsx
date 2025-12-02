@@ -1,25 +1,17 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "./Footer.css";
+import { portfolioData } from '../data/portfolio';
 
 const Footer = () => {
   return (
-    <motion.footer
-      className="footer"
-      initial={{ opacity: 0, y: 18 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.1 }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="footer-container">
-        <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
-        <div className="social-links">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-          <a href="mailto:youremail@example.com" aria-label="Email">Email</a>
-        </div>
+    <footer style={{ padding: '1.5rem 0', backgroundColor: 'var(--color-secondary)', textAlign: 'center' }}>
+      <div className="container">
+        <p style={{ color: 'var(--color-muted)', fontSize: '0.875rem', fontFamily: 'var(--font-mono)' }}>
+          Designed & Built by <span style={{ color: 'var(--color-accent)' }}>{portfolioData.hero.name}</span>
+        </p>
+        <p style={{ color: '#475569', fontSize: '0.75rem', marginTop: '0.5rem' }}>
+          © {new Date().getFullYear()} All rights reserved.
+        </p>
       </div>
-    </motion.footer>
+    </footer>
   );
 };
 

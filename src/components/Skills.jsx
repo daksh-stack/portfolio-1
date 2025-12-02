@@ -9,10 +9,19 @@ const Skills = () => {
     { name: "React", icon: "⚛️" },
     { name: "CSS/HTML", icon: "🎨" },
     { name: "Python", icon: "🐍" },
-    { name: "Java", icon: "☕" },
     { name: "C++", icon: "🔧" },
     { name: "Git & GitHub", icon: "🌐" },
     { name: "AI/ML", icon: "🤖" },
+    { name: "FastAPIs", icon: "🤖" },
+    { name: "NumPy", icon: "🤖" },
+    { name: "Matplotlib", icon: "🤖" },
+    { name: "seaborn", icon: "🤖" },
+    { name: "Nodejs", icon: "🤖" },
+    { name: "Expressjs", icon: "🤖" },
+    { name: "Gen-AI", icon: "🤖" },
+    { name: "Agentic-AI", icon: "🤖" },
+
+
   ];
 
   return (

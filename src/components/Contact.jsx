@@ -1,67 +1,49 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "./Projects.css";
+import { motion } from 'framer-motion';
+import { portfolioData } from '../data/portfolio';
 
-const projects = [
-  {
-    title: "AstroNautica",
-    description: "Educational astronomy learning platform with AI chatbots.",
-    techStack: ["React", "Node.js", "AI/ML"],
-    image: "https://via.placeholder.com/300x180.png?text=AstroNautica",
-    demoLink: "#",
-    codeLink: "#"
-  },
-  {
-    title: "Portfolio Website",
-    description: "My personal portfolio site built with React and CSS.",
-    techStack: ["React", "CSS"],
-    image: "https://via.placeholder.com/300x180.png?text=Portfolio",
-    demoLink: "#",
-    codeLink: "#"
-  },
-  {
-    title: "Eco Tracker",
-    description: "Web app to help environmentally aware users improve sustainability.",
-    techStack: ["MERN", "AI"],
-    image: "https://via.placeholder.com/300x180.png?text=Eco+Tracker",
-    demoLink: "#",
-    codeLink: "#"
-  }
-];
+const Contact = () => {
+  const { contact } = portfolioData;
 
-const Projects = () => {
   return (
-    <section className="projects" id="projects">
-      <h2>My Projects</h2>
-      <div className="projects-grid">
-        {projects.map((project, idx) => (
-          <motion.div
-            key={idx}
-            className="project-card"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.18 }}
-            transition={{ duration: 0.5, delay: idx * 0.08 }}
-          >
-            <img src={project.image} alt={project.title} />
-            <div className="project-content">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className="tech-stack">
-                {project.techStack.map((tech, i) => (
-                  <span key={i} className="tech-pill">{tech}</span>
-                ))}
-              </div>
-              <div className="project-links">
-                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">Demo</a>
-                <a href={project.codeLink} target="_blank" rel="noopener noreferrer">Code</a>
-              </div>
-            </div>
-          </motion.div>
-        ))}
+    <section id="contact" className="py-20">
+      <div className="container" style={{ textAlign: 'center' }}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          style={{ maxWidth: '42rem', margin: '0 auto' }}
+        >
+          <h2 className="section-title">Get In Touch</h2>
+          <p style={{ color: 'var(--color-muted)', fontSize: '1.125rem', marginBottom: '2rem' }}>
+            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+
+          <a href={`mailto:${contact.email}`} className="btn-primary btn" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Say Hello
+          </a>
+
+          <div style={{ marginTop: '3rem', display: 'flex', justifyContent: 'center', gap: '2rem' }}>
+            {contact.socials.map((social, index) => (
+              <a
+                key={index}
+                href={social.href}
+                style={{ color: 'var(--color-muted)', fontWeight: '500' }}
+                onMouseEnter={(e) => e.target.style.color = 'var(--color-accent)'}
+                onMouseLeave={(e) => e.target.style.color = 'var(--color-muted)'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {social.label}
+              </a>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default Contact;
