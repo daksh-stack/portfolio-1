@@ -51,6 +51,12 @@ export const portfolioData = {
             description: "CodeTrackr is a browser extension. This extension provides users with tools and features to streamline their coding workflow, track their progress, and manage their coding resources effectively.",
             tags: ["React", "API Integration", "Chart.js"],
             links: { demo: "#", repo: "https://github.com/daksh-stack/Code-Trackr.git" }
+        },
+        {
+            title: "Vidya-Setu",
+            description: "Vidya-Setu is an AI-integrated platform for college students to prepare for placements. It provides users with tools and features to streamline their coding workflow, track their progress, and manage their coding resources effectively. This project is the future SaaS product for LUNARIS ventures.",
+            tags: ["Next.js", "API Integration", "Tailwindcss", "Typescript"],
+            links: { demo: "https://vidya-setu-ebon.vercel.app", repo: "https://github.com/daksh-stack/Code-Trackr.git" }
         }
     ],
     contact: {
