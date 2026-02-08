@@ -1,5 +1,5 @@
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt } from 'react-icons/fa';
-import { SiTailwindcss, SiMongodb, SiExpress, SiNextdotjs, SiTypescript } from 'react-icons/si';
+import { SiTailwindcss, SiMongodb, SiExpress, SiNextdotjs, SiTypescript, SiPostgresql } from 'react-icons/si';
 
 export const portfolioData = {
     hero: {
@@ -32,6 +32,7 @@ export const portfolioData = {
         { name: "HTML5", icon: FaHtml5, color: "#E34F26" },
         { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" },
         { name: "Git", icon: FaGitAlt, color: "#F05032" },
+        { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     ],
     projects: [
         {
@@ -57,7 +58,19 @@ export const portfolioData = {
             description: "Vidya-Setu is an AI-integrated platform for college students to prepare for placements. It provides users with tools and features to streamline their coding workflow, track their progress, and manage their coding resources effectively. This project is the future SaaS product for LUNARIS ventures.",
             tags: ["Next.js", "API Integration", "Tailwindcss", "Typescript"],
             links: { demo: "https://vidya-setu-ebon.vercel.app", repo: "https://github.com/daksh-stack/Code-Trackr.git" }
-        }
+        },
+        {
+            title: "Civic-Setu",
+            description: "Civic Setu is a technology-driven civic engagement platform designed to bridge the gap between citizens and local governing bodies. The platform enables citizens to report civic issues such as sanitation problems, road damage, water supply issues, and public safety concerns through a centralized digital interface.",
+            tags: ["React.js", "API Integration", "Tailwindcss", "JavaScript", "Node.js", "MongoDB"],
+            links: { demo: "https://civicsetu-7.vercel.app/", repo: "https://github.com/daksh-stack" }
+        },
+        {
+            title: "Key-Verse",
+            description: "Key-Verse is a secure digital platform focused on managing and safeguarding cryptographic keys and sensitive credentials.It provides structured access control, encryption-based storage, and controlled key usage to prevent unauthorized access. The system emphasizes security, reliability, and scalability for modern applications and services. Key-Verse enables developers to handle secrets efficiently while maintaining strong security standards. It is a SaaS product for LUNARIS ventures.",
+            tags: ["React.js", "API Integration", "Tailwindcss", "JavaScript", "Node.js", "postgresQL"],
+            links: { demo: "https://key-verse.vercel.app/", repo: "https://github.com/daksh-stack" }
+        },
     ],
     contact: {
         email: "dakshhardiya34@gmail.com",
