@@ -20,6 +20,17 @@ const Skills = () => {
     { name: "Expressjs", icon: "🤖" },
     { name: "Gen-AI", icon: "🤖" },
     { name: "Agentic-AI", icon: "🤖" },
+    { name: "Data Structures & Algorithms", icon: "📊" },
+    { name: "Python Turtle Graphics", icon: "🐢" },
+    { name: "Flask", icon: "🍶" },
+    { name: "REST API Development", icon: "🔗" },
+    { name: "MySQL", icon: "🗄️" },
+    { name: "PostgreSQL", icon: "🐘" },
+    { name: "MongoDB", icon: "🍃" },
+    { name: "scikit-learn", icon: "📈" },
+    { name: "Three.js", icon: "🎲" },
+    { name: "GSAP", icon: "🎬" },
+    { name: "DVC", icon: "🔄" },
 
 
   ];

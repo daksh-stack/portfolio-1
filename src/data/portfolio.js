@@ -1,5 +1,5 @@
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt } from 'react-icons/fa';
-import { SiTailwindcss, SiMongodb, SiExpress, SiNextdotjs, SiTypescript, SiPostgresql } from 'react-icons/si';
+import { SiTailwindcss, SiMongodb, SiExpress, SiNextdotjs, SiTypescript, SiPostgresql, SiPython, SiCplusplus, SiFlask, SiMysql, SiNumpy, SiScikitlearn, SiThreedotjs } from 'react-icons/si';
 
 export const portfolioData = {
     hero: {
@@ -33,6 +33,13 @@ export const portfolioData = {
         { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" },
         { name: "Git", icon: FaGitAlt, color: "#F05032" },
         { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+        { name: "Python", icon: SiPython, color: "#3776AB" },
+        { name: "C++", icon: SiCplusplus, color: "#00599C" },
+        { name: "Flask", icon: SiFlask, color: "#000000" },
+        { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+        { name: "NumPy", icon: SiNumpy, color: "#013243" },
+        { name: "scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
+        { name: "Three.js", icon: SiThreedotjs, color: "#049EF4" },
     ],
     projects: [
         {
@@ -44,7 +51,7 @@ export const portfolioData = {
         {
             title: "Fashionate",
             description: "A fashion search engine that gave the users to get the best price they could get across various platforms. We used Web scrapping to get the data from the platforms available online and show the most affordable price of the product. We also worked on an AI feature- ‘AI outfit try-on’. It basically helped the user to try the outfit virtually.",
-            tags: ["Next.js", "TypeScript", "Tailwind"],
+            tags: ["react.js", "JavaScript", "Tailwind-css", "Node.js", "MongoDB"],
             links: { demo: "#", repo: "#" }
         },
         {
@@ -71,6 +78,12 @@ export const portfolioData = {
             tags: ["React.js", "API Integration", "Tailwindcss", "JavaScript", "Node.js", "postgresQL"],
             links: { demo: "https://key-verse.vercel.app/", repo: "https://github.com/daksh-stack" }
         },
+        {
+            title: "Rock and mine predictor",
+            description: "Key-Verse is a secure digital platform focused on managing and safeguarding cryptographic keys and sensitive credentials.It provides structured access control, encryption-based storage, and controlled key usage to prevent unauthorized access. The system emphasizes security, reliability, and scalability for modern applications and services. Key-Verse enables developers to handle secrets efficiently while maintaining strong security standards. It is a SaaS product for LUNARIS ventures.",
+            tags: ["React.js", "API Integration", "Tailwindcss", "JavaScript", "Node.js", "postgresQL"],
+            links: { demo: "https://key-verse.vercel.app/", repo: "https://github.com/daksh-stack" }
+        }
     ],
     contact: {
         email: "dakshhardiya34@gmail.com",
@@ -91,6 +104,18 @@ export const portfolioData = {
                 "Topics include Stars and Nebulae: Mist to Mystery, Sustainable Space Exploration and much more.",
                 "Demonstrated strong analytical, writing, and knowledge sharing skills.",
                 "Published works highlight ability to simplify complex concepts for broader audiences."
+            ]
+        },
+        {
+            company: "Jetlearn",
+            role: "International coding instructor",
+            duration: "Feb 2026 – Present",
+            type: "Remote",
+            description: [
+                "Delivered engaging coding lessons to kids using Scratch, Python, and web development at JetLearn.",
+                "Created fun, interactive projects that help students build confidence and problem-solving skills.",
+                "Provided personalized feedback and tracked student progress to support individual growth.",
+                "Inspired young learners to develop a lifelong passion for coding and technology."
             ]
         }
     ],
