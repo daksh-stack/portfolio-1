@@ -4,7 +4,7 @@ import { SiTailwindcss, SiMongodb, SiExpress, SiNextdotjs, SiTypescript, SiPostg
 export const portfolioData = {
     hero: {
         name: "Daksh",
-        title: "Full-Stack Developer",
+        title: "Full-Stack AI Developer",
         description: "I build accessible, pixel-perfect, performant, and responsive web experiences.",
         actions: [
             { label: "View Projects", href: "#projects", primary: true },
@@ -94,6 +94,18 @@ export const portfolioData = {
         ]
     },
     experience: [
+        {
+            company: "Wangoes Technologies Pvt. Ltd.",
+            role: "AI Research and Development Intern",
+            duration: "May 2026 – Present",
+            type: "onsite",
+            description: [
+                "Authored multiple articles on science, technology, and education, blending research with accessible writing.",
+                "Topics include Stars and Nebulae: Mist to Mystery, Sustainable Space Exploration and much more.",
+                "Demonstrated strong analytical, writing, and knowledge sharing skills.",
+                "Published works highlight ability to simplify complex concepts for broader audiences."
+            ]
+        },
         {
             company: "Cosmox Blogs",
             role: "Technical Article Writer",
