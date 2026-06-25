@@ -43,30 +43,6 @@ export const portfolioData = {
     ],
     projects: [
         {
-            title: "Astro-Hive",
-            description: "AstroHive is an AI-powered, distributed assistant system designed to manage and support autonomous space missions. It uses modular OPEA-compliant microservices to create intelligent agents that operate at three mission layers: rovers, satellites, and Earth-based control stations.",
-            tags: ["React", "Node.js", "MongoDB", "Stripe"],
-            links: { demo: "#", repo: "https://github.com/daksh-stack/astro-hive.git" }
-        },
-        {
-            title: "Fashionate",
-            description: "A fashion search engine that gave the users to get the best price they could get across various platforms. We used Web scrapping to get the data from the platforms available online and show the most affordable price of the product. We also worked on an AI feature- ‘AI outfit try-on’. It basically helped the user to try the outfit virtually.",
-            tags: ["react.js", "JavaScript", "Tailwind-css", "Node.js", "MongoDB"],
-            links: { demo: "#", repo: "#" }
-        },
-        {
-            title: "Code-Trackr",
-            description: "CodeTrackr is a browser extension. This extension provides users with tools and features to streamline their coding workflow, track their progress, and manage their coding resources effectively.",
-            tags: ["React", "API Integration", "Chart.js"],
-            links: { demo: "#", repo: "https://github.com/daksh-stack/Code-Trackr.git" }
-        },
-        {
-            title: "Vidya-Setu",
-            description: "Vidya-Setu is an AI-integrated platform for college students to prepare for placements. It provides users with tools and features to streamline their coding workflow, track their progress, and manage their coding resources effectively. This project is the future SaaS product for LUNARIS ventures.",
-            tags: ["Next.js", "API Integration", "Tailwindcss", "Typescript"],
-            links: { demo: "https://vidya-setu-ebon.vercel.app", repo: "https://github.com/daksh-stack/Code-Trackr.git" }
-        },
-        {
             title: "Civic-Setu",
             description: "Civic Setu is a technology-driven civic engagement platform designed to bridge the gap between citizens and local governing bodies. The platform enables citizens to report civic issues such as sanitation problems, road damage, water supply issues, and public safety concerns through a centralized digital interface.",
             tags: ["React.js", "API Integration", "Tailwindcss", "JavaScript", "Node.js", "MongoDB"],
@@ -77,6 +53,30 @@ export const portfolioData = {
             description: "Key-Verse is a secure digital platform focused on managing and safeguarding cryptographic keys and sensitive credentials.It provides structured access control, encryption-based storage, and controlled key usage to prevent unauthorized access. The system emphasizes security, reliability, and scalability for modern applications and services. Key-Verse enables developers to handle secrets efficiently while maintaining strong security standards. It is a SaaS product for LUNARIS ventures.",
             tags: ["React.js", "API Integration", "Tailwindcss", "JavaScript", "Node.js", "postgresQL"],
             links: { demo: "https://key-verse.vercel.app/", repo: "https://github.com/daksh-stack" }
+        },
+        {
+            title: "Vidya-Setu",
+            description: "Vidya-Setu is an AI-integrated platform for college students to prepare for placements. It provides users with tools and features to streamline their coding workflow, track their progress, and manage their coding resources effectively. This project is the future SaaS product for LUNARIS ventures.",
+            tags: ["Next.js", "API Integration", "Tailwindcss", "Typescript"],
+            links: { demo: "https://vidya-setu-ebon.vercel.app", repo: "https://github.com/daksh-stack/Code-Trackr.git" }
+        },
+        {
+            title: "Astro-Hive",
+            description: "AstroHive is an AI-powered, distributed assistant system designed to manage and support autonomous space missions. It uses modular OPEA-compliant microservices to create intelligent agents that operate at three mission layers: rovers, satellites, and Earth-based control stations.",
+            tags: ["React", "Node.js", "MongoDB", "Stripe"],
+            links: { demo: "https://github.com/daksh-stack/astro-hive.git", repo: "https://github.com/daksh-stack/astro-hive.git" }
+        },
+        {
+            title: "Fashionate",
+            description: "A fashion search engine that gave the users to get the best price they could get across various platforms. We used Web scrapping to get the data from the platforms available online and show the most affordable price of the product. We also worked on an AI feature- ‘AI outfit try-on’. It basically helped the user to try the outfit virtually.",
+            tags: ["react.js", "JavaScript", "Tailwind-css", "Node.js", "MongoDB"],
+            links: { demo: "#", repo: "https://github.com/daksh-stack/Fashionate.git" }
+        },
+        {
+            title: "Code-Trackr",
+            description: "CodeTrackr is a browser extension. This extension provides users with tools and features to streamline their coding workflow, track their progress, and manage their coding resources effectively.",
+            tags: ["React", "API Integration", "Chart.js"],
+            links: { demo: "#", repo: "https://github.com/daksh-stack/Code-Trackr.git" }
         },
         {
             title: "Rock and mine predictor",
